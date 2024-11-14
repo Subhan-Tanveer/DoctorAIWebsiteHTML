@@ -65,7 +65,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/predict', methods=['POST', 'GET'])
+@app.route('predict', methods=['POST', 'GET'])
 def predict():
     if request.method == 'POST':
         symptoms = request.form.get('symptoms')
@@ -105,7 +105,7 @@ def predict():
 
 
 
-@app.route('/about')
+@app.route('about')
 def about():
     return render_template('about.html')
 
@@ -114,7 +114,7 @@ def about():
 def contact():
     return render_template('contact.html')
 
-@app.route('/developer')
+@app.route('developer')
 def developer():
     return render_template('developer.html')
 
