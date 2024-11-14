@@ -65,7 +65,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('predict', methods=['POST', 'GET'])
+@app.route('/predict', methods=['POST', 'GET'])
 def predict():
     if request.method == 'POST':
         symptoms = request.form.get('symptoms')
